@@ -23,6 +23,10 @@ class Sensei extends Ninja{
         this.strength = 10;
         this.wisdom = 10;
     }
+    speakWisdom(){
+        super.drinkSake();
+        console.log('Take into account that great love and great accomplishment involve great risk')
+    }
 }
 
 
@@ -33,3 +37,4 @@ ninja1.showStats();
 
 const sensei1 = new Sensei("Shoto");
 console.log (sensei1.health);
+sensei1.speakWisdom();
